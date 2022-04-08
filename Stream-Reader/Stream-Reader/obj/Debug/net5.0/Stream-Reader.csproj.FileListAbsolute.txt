@@ -1,0 +1,16 @@
+C:\Users\farid\Desktop\New folder (2)\FaridMammadov60-Stream-Reader-Writer-Json-Xml\Stream-Reader\Stream-Reader\bin\Debug\net5.0\Stream-Reader.exe
+C:\Users\farid\Desktop\New folder (2)\FaridMammadov60-Stream-Reader-Writer-Json-Xml\Stream-Reader\Stream-Reader\bin\Debug\net5.0\Stream-Reader.deps.json
+C:\Users\farid\Desktop\New folder (2)\FaridMammadov60-Stream-Reader-Writer-Json-Xml\Stream-Reader\Stream-Reader\bin\Debug\net5.0\Stream-Reader.runtimeconfig.json
+C:\Users\farid\Desktop\New folder (2)\FaridMammadov60-Stream-Reader-Writer-Json-Xml\Stream-Reader\Stream-Reader\bin\Debug\net5.0\Stream-Reader.runtimeconfig.dev.json
+C:\Users\farid\Desktop\New folder (2)\FaridMammadov60-Stream-Reader-Writer-Json-Xml\Stream-Reader\Stream-Reader\bin\Debug\net5.0\Stream-Reader.dll
+C:\Users\farid\Desktop\New folder (2)\FaridMammadov60-Stream-Reader-Writer-Json-Xml\Stream-Reader\Stream-Reader\bin\Debug\net5.0\Stream-Reader.pdb
+C:\Users\farid\Desktop\New folder (2)\FaridMammadov60-Stream-Reader-Writer-Json-Xml\Stream-Reader\Stream-Reader\obj\Debug\net5.0\Stream-Reader.csproj.AssemblyReference.cache
+C:\Users\farid\Desktop\New folder (2)\FaridMammadov60-Stream-Reader-Writer-Json-Xml\Stream-Reader\Stream-Reader\obj\Debug\net5.0\Stream-Reader.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\farid\Desktop\New folder (2)\FaridMammadov60-Stream-Reader-Writer-Json-Xml\Stream-Reader\Stream-Reader\obj\Debug\net5.0\Stream-Reader.AssemblyInfoInputs.cache
+C:\Users\farid\Desktop\New folder (2)\FaridMammadov60-Stream-Reader-Writer-Json-Xml\Stream-Reader\Stream-Reader\obj\Debug\net5.0\Stream-Reader.AssemblyInfo.cs
+C:\Users\farid\Desktop\New folder (2)\FaridMammadov60-Stream-Reader-Writer-Json-Xml\Stream-Reader\Stream-Reader\obj\Debug\net5.0\Stream-Reader.csproj.CoreCompileInputs.cache
+C:\Users\farid\Desktop\New folder (2)\FaridMammadov60-Stream-Reader-Writer-Json-Xml\Stream-Reader\Stream-Reader\obj\Debug\net5.0\Stream-Reader.dll
+C:\Users\farid\Desktop\New folder (2)\FaridMammadov60-Stream-Reader-Writer-Json-Xml\Stream-Reader\Stream-Reader\obj\Debug\net5.0\refint\Stream-Reader.dll
+C:\Users\farid\Desktop\New folder (2)\FaridMammadov60-Stream-Reader-Writer-Json-Xml\Stream-Reader\Stream-Reader\obj\Debug\net5.0\Stream-Reader.pdb
+C:\Users\farid\Desktop\New folder (2)\FaridMammadov60-Stream-Reader-Writer-Json-Xml\Stream-Reader\Stream-Reader\obj\Debug\net5.0\Stream-Reader.genruntimeconfig.cache
+C:\Users\farid\Desktop\New folder (2)\FaridMammadov60-Stream-Reader-Writer-Json-Xml\Stream-Reader\Stream-Reader\obj\Debug\net5.0\ref\Stream-Reader.dll
