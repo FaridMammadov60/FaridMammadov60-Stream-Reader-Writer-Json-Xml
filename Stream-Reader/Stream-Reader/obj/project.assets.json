@@ -54,11 +54,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\farid\\Desktop\\New folder (2)\\FaridMammadov60-Stream-Reader-Writer-Json-Xml\\Stream-Reader\\Stream-Reader\\Stream-Reader.csproj",
+      "projectUniqueName": "C:\\Users\\farid\\Desktop\\P322\\Task\\FaridMammadov60-Stream-Reader-Writer-Json-Xml\\Stream-Reader\\Stream-Reader\\Stream-Reader.csproj",
       "projectName": "Stream-Reader",
-      "projectPath": "C:\\Users\\farid\\Desktop\\New folder (2)\\FaridMammadov60-Stream-Reader-Writer-Json-Xml\\Stream-Reader\\Stream-Reader\\Stream-Reader.csproj",
+      "projectPath": "C:\\Users\\farid\\Desktop\\P322\\Task\\FaridMammadov60-Stream-Reader-Writer-Json-Xml\\Stream-Reader\\Stream-Reader\\Stream-Reader.csproj",
       "packagesPath": "C:\\Users\\farid\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\farid\\Desktop\\New folder (2)\\FaridMammadov60-Stream-Reader-Writer-Json-Xml\\Stream-Reader\\Stream-Reader\\obj\\",
+      "outputPath": "C:\\Users\\farid\\Desktop\\P322\\Task\\FaridMammadov60-Stream-Reader-Writer-Json-Xml\\Stream-Reader\\Stream-Reader\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

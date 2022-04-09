@@ -17,7 +17,8 @@ namespace Stream_Reader
             Console.InputEncoding = Encoding.Unicode;
             #endregion
             #region Create folder and file
-            string path2 = @"C:\Users\farid\Desktop\New folder (2)\FaridMammadov60-Stream-Reader-Writer-Json-Xml\Stream-Reader\Stream-Reader\Files\Database.json";
+            string path2 = @"C:\Users\farid\Desktop\P322\Task\FaridMammadov60-Stream-Reader-Writer-Json-Xml\Stream-Reader\Stream-Reader\Files\Database.json";
+
             if (!File.Exists(path2))
             {
                 File.Create(path2);

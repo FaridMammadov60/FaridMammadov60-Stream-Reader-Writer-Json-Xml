@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ONHqpyw/Jx/EQTxCTnh8mTY2MYVIrKp9XfdCm22R9ohp1/viby+zl0DMuy1WI+D3WxBS9rYHJmfrt2P3FdWRLg==",
+  "dgSpecHash": "c4GxdOYa9YeqhubHxuoPu+iXj9tL2Gw6Vr4pBvju+Ggz1Hq5g00kxaGO7VeSQRUT+20qPE1Hg5bcssozfPb6fg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\farid\\Desktop\\New folder (2)\\FaridMammadov60-Stream-Reader-Writer-Json-Xml\\Stream-Reader\\Stream-Reader\\Stream-Reader.csproj",
+  "projectFilePath": "C:\\Users\\farid\\Desktop\\P322\\Task\\FaridMammadov60-Stream-Reader-Writer-Json-Xml\\Stream-Reader\\Stream-Reader\\Stream-Reader.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\farid\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],

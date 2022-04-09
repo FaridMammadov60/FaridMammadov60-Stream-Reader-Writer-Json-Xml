@@ -75,10 +75,9 @@ namespace Stream_Reader.Models
             {
                 Console.WriteLine("ID is null");
                 return;
-            }
+            }            
             
-            int? a= Employees.Find(m => m.Id == id).Id;
-            if (a == id)
+            if (Employees.Find(m => m.Id == id).Id == id)
             {
                 Employees.Find(m => m.Id == id).ShowInfo();
                 return;
@@ -92,9 +91,8 @@ namespace Stream_Reader.Models
             {
                 Console.WriteLine("ID is null");
                 return;
-            }
-            int? b = Employees.Find(e => e.Id == id).Id;
-            if (b == id)
+            }            
+            if (Employees.Find(e => e.Id == id).Id == id)
             {
                 Employees.Remove(Employees.Find(e => e.Id == id));
                 Console.WriteLine("The operation was performed successfully");
