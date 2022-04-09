@@ -82,20 +82,43 @@ namespace Stream_Reader
                     case 2:
                         #region GetEmployeeId and deserialize
                         Console.Clear();
-                        Console.Write("ID select: ");
-                        int ib = Convert.ToInt32(Console.ReadLine());
-                        using (StreamReader sr = new StreamReader(path2))
+                        if (department.Employees.Count == 0)
                         {
-                            result = sr.ReadToEnd();
+                            Console.WriteLine("Departament is empty");
+                           goto L1;
                         }
-                        Console.WriteLine(result);
-                        Department dep = JsonConvert.DeserializeObject<Department>(result);
-                        department.GetEmployeeById(ib);
+                        Console.Write("ID select: ");
+                        var bb=Console.ReadLine();
+                        int? a;
+                        if (String.IsNullOrEmpty(bb))
+                        {
+                             a = null;
+                            //Consoldada gostere bilerdim lakin methodda yoxladim
+                            department.GetEmployeeById(a);
+                            return;
+                        }
+                        else
+                        {
+                            a = Convert.ToInt32(bb);
+                            using (StreamReader sr = new StreamReader(path2))
+                            {
+                                result = sr.ReadToEnd();
+                            }
+                            Console.WriteLine(result);
+                            Department dep = JsonConvert.DeserializeObject<Department>(result);
+                            department.GetEmployeeById(a);
+                        }           
+
                         #endregion
                         goto L1;
                     case 3:
                         #region Remove and deserialize and serialize
                         Console.Clear();
+                        if (department.Employees.Count==0)
+                        {
+                            Console.WriteLine("Departament is empty");
+                            goto L1;
+                        }
                         using (StreamReader sr = new StreamReader(path2))
                         {
                             result = sr.ReadToEnd();
@@ -103,18 +126,36 @@ namespace Stream_Reader
                         Console.WriteLine(result);
                         Department dep2 = JsonConvert.DeserializeObject<Department>(result);
                         Console.Write("ID select: ");
-                        int ir = Convert.ToInt32(Console.ReadLine());
-                        department.RemoveEmployee(ir);
-                        string addJson2 = JsonConvert.SerializeObject(department);
-
-                        using (StreamWriter sw = new StreamWriter(path2))
-                        {
-                            sw.WriteLine(addJson2);
+                        var ir = Console.ReadLine();
+                        int? b;
+                        if (String.IsNullOrEmpty(ir))
+                        {                           
+                            b = null;
+                            //Consoldada gostere bilerdim lakin methodda yoxladim
+                            department.RemoveEmployee(b);
+                            return;
                         }
+                        else
+                        {
+                            b=Convert.ToInt32(ir);
+                            department.RemoveEmployee(b);
+                            string addJson2 = JsonConvert.SerializeObject(department);
+
+                            using (StreamWriter sw = new StreamWriter(path2))
+                            {
+                                sw.WriteLine(addJson2);
+                            }
+                        }
+                        
                         #endregion
                         goto L1;
                     case 4:
                         Console.Clear();
+                        if (department.Employees.Count == 0)
+                        {
+                            Console.WriteLine("Departament is empty");
+                            return;
+                        }
                         department.AllEmployee();
                         goto L1;
                     default:
