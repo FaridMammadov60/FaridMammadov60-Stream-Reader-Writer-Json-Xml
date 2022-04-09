@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Stream_Reader.Models
 {
@@ -52,6 +48,10 @@ namespace Stream_Reader.Models
         #endregion
 
         #region Constructor
+        public Employee()
+        {
+
+        }
         public Employee(string name, float salary)
         {
             _id++;
@@ -68,7 +68,8 @@ namespace Stream_Reader.Models
                 $"Employee ID: {Id}\n" +
                 $"Employee name: {Name}\n" +
                 $"Employee salary: {Salary}\n" +
-                $"--------------END-----------------");
+                $"----------------END------------------");
+            Console.WriteLine();
         }
         #endregion
     }

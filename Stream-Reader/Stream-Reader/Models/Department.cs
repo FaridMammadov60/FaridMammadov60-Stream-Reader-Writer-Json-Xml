@@ -61,7 +61,7 @@ namespace Stream_Reader.Models
             Employees.Add(employee);
 
             Console.WriteLine("The operation was performed successfully");
-            Console.WriteLine("-----------------------------");
+            Console.WriteLine();
         }
 
         public void GetEmployeeById(int? id)
@@ -72,6 +72,7 @@ namespace Stream_Reader.Models
                 return;
             }
             List<Employee> find = Employees.FindAll(m => m.Id == id);
+            
             foreach (var item in find)
             {
                 item.ShowInfo();
@@ -92,6 +93,7 @@ namespace Stream_Reader.Models
             {
                 Employees.Remove(item);
                 Console.WriteLine("The operation was performed successfully");
+                Console.WriteLine();
                 return;
             }
             Console.WriteLine("No information found");
