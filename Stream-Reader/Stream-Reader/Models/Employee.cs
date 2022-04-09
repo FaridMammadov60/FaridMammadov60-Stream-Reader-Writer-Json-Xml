@@ -64,9 +64,11 @@ namespace Stream_Reader.Models
         #region Method
         public void ShowInfo()
         {
-            Console.WriteLine($"Employee ID: {Id}\n" +
+            Console.WriteLine($"-----------EMPLOYEEEEEEE------------\n" +
+                $"Employee ID: {Id}\n" +
                 $"Employee name: {Name}\n" +
-                $"Employee salary: {Salary}");
+                $"Employee salary: {Salary}\n" +
+                $"--------------END-----------------");
         }
         #endregion
     }

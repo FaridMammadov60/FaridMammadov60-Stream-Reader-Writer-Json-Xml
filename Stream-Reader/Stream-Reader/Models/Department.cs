@@ -34,9 +34,9 @@ namespace Stream_Reader.Models
             {
                 return _employees;
             }
-            set
-            {
-                _employees = value;
+            set 
+            { 
+                _employees=value;
             }
         }
         #endregion
@@ -55,64 +55,59 @@ namespace Stream_Reader.Models
         #region Method
         public void AddEmployee(Employee employee)
         {
-
-            int a = Employees.Find(m => m.Id == employee.Id).Id;
-            if (employee.Id == a)
+            foreach (var item in Employees)
             {
-                Console.WriteLine("Məlunmat bazda mövcuddur");
-                return;
+                if (item.Id==employee.Id)
+                {
+                    Console.WriteLine("This ID already existed");
+                    return;
+                }
             }
-
-            //Console.WriteLine(e.Id);
-
             Employees.Add(employee);
-            Console.WriteLine("Əməliyyat uğurla icra edildi");
-            Console.WriteLine("-----------------------------");
+            
+            Console.WriteLine("The operation was performed successfully");
+            Console.WriteLine("-----------------------------");          
         }
 
         public void GetEmployeeById(int? id)
         {
-            //Console.Write("ID-ni daxil edin: ");
-
-            ////bool idinput = int.TryParse(Console.ReadLine(),ref id);
-
-            //string s = Console.ReadLine();
-            //if (s==null)
-            //{
-            //    throw new NullReferenceException();
-            //}
-            //string numinput = Console.ReadLine() ?? string.Empty;
-
             if (id == null)
             {
-                Console.WriteLine("ID nulldur");
+                Console.WriteLine("ID is null");
                 return;
             }
-            Employee c = Employees.Find(e => e.Id == id);
-            if (c.Id == id)
+            
+            int? a= Employees.Find(m => m.Id == id).Id;
+            if (a == id)
             {
-                c.ShowInfo();
-                Console.WriteLine("---------------------");
+                Employees.Find(m => m.Id == id).ShowInfo();
                 return;
             }
-            Console.WriteLine("Məlumat tapılmadı");
+            Console.WriteLine("No information found");
         }
 
         public void RemoveEmployee(int? id)
         {
             if (id == null)
             {
-                Console.WriteLine("ID nulldur");
+                Console.WriteLine("ID is null");
                 return;
             }
-            Employee r = Employees.Find(e => e.Id == id);
-            if (r.Id == id)
+            int? b = Employees.Find(e => e.Id == id).Id;
+            if (b == id)
             {
-                Employees.Remove(r);
-                Console.WriteLine("Əməliyyat uğurla icara edildi");
+                Employees.Remove(Employees.Find(e => e.Id == id));
+                Console.WriteLine("The operation was performed successfully");
             }
-            Console.WriteLine("Məlumat tapılmadı");
+            Console.WriteLine("No information found");
 
+        }
+        public void AllEmployee()
+        {
+            foreach (var item in Employees)
+            {
+                item.ShowInfo();
+            }
         }
         #endregion
     }
