@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Stream_Reader.Models
 {
@@ -34,9 +31,9 @@ namespace Stream_Reader.Models
             {
                 return _employees;
             }
-            set 
-            { 
-                _employees=value;
+            set
+            {
+                _employees = value;
             }
         }
         #endregion
@@ -55,18 +52,16 @@ namespace Stream_Reader.Models
         #region Method
         public void AddEmployee(Employee employee)
         {
-            foreach (var item in Employees)
+            List<Employee> find3 = Employees.FindAll(m => m.Id == employee.Id);
+            foreach (var item in find3)
             {
-                if (item.Id==employee.Id)
-                {
-                    Console.WriteLine("This ID already existed");
-                    return;
-                }
+                Console.WriteLine("This ID already existed");
+                return;
             }
             Employees.Add(employee);
-            
+
             Console.WriteLine("The operation was performed successfully");
-            Console.WriteLine("-----------------------------");          
+            Console.WriteLine("-----------------------------");
         }
 
         public void GetEmployeeById(int? id)
@@ -76,12 +71,12 @@ namespace Stream_Reader.Models
                 Console.WriteLine("ID is null");
                 return;
             }
-            List<Employee> find=Employees.FindAll(m=>m.Id==id);
+            List<Employee> find = Employees.FindAll(m => m.Id == id);
             foreach (var item in find)
             {
                 item.ShowInfo();
                 return;
-            }            
+            }
             Console.WriteLine("No information found");
         }
 
