@@ -27,7 +27,8 @@ namespace Stream_Reader
                 }
                 using (StreamWriter swe = new StreamWriter(path2))
                 {
-                    swe.WriteLine("Farid Mammadov 1991");
+                    //test
+                    swe.WriteLine("Farid Mammadov");
                 }
                 string result;
                 using (StreamReader srr = new StreamReader(path2))
