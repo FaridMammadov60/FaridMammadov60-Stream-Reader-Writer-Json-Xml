@@ -47,7 +47,7 @@ namespace Stream_Reader
             $"4. Get all employee\n" +
             $"0. Quit");
             Console.Write("Enter to menyu number: ");
-            int menyu = Convert.ToInt32(Console.ReadLine());
+            var menyu = Convert.ToInt32(Console.ReadLine());
             #endregion                        
 
             switch (menyu)

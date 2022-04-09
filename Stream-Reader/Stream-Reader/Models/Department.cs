@@ -75,13 +75,13 @@ namespace Stream_Reader.Models
             {
                 Console.WriteLine("ID is null");
                 return;
-            }            
-            
-            if (Employees.Find(m => m.Id == id).Id == id)
-            {
-                Employees.Find(m => m.Id == id).ShowInfo();
-                return;
             }
+            List<Employee> find=Employees.FindAll(m=>m.Id==id);
+            foreach (var item in find)
+            {
+                item.ShowInfo();
+                return;
+            }            
             Console.WriteLine("No information found");
         }
 
@@ -91,11 +91,13 @@ namespace Stream_Reader.Models
             {
                 Console.WriteLine("ID is null");
                 return;
-            }            
-            if (Employees.Find(e => e.Id == id).Id == id)
+            }
+            List<Employee> find2 = Employees.FindAll(m => m.Id == id);
+            foreach (var item in find2)
             {
-                Employees.Remove(Employees.Find(e => e.Id == id));
+                Employees.Remove(item);
                 Console.WriteLine("The operation was performed successfully");
+                return;
             }
             Console.WriteLine("No information found");
 
